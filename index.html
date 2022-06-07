@@ -15,7 +15,11 @@
 <body>
   <div class="container">
     <div class="site-header">
+      <header role="banner">
+        <a href="#main" class="skip">Skip to main content.</a>
       <h1>Jam Box Studios</h1>
+    </header>
+    <main id="main" role="main">
       <div class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
@@ -32,7 +36,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner">
         <h1>Meet the owner</h1>
-        <ul>
+        <ul itemscope itemtype="https://schema.org/Person">
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
@@ -53,7 +57,7 @@
           <input type="text" placeholder="Full Name">
           <input type="text" placeholder="Email">
           <input type="text" placeholder="Subject">
-          <b>Your Message</b>
+          <h3>Your Message</h3>
           <textarea></textarea>
           <button type="submit">Send</button>
         </form>
@@ -62,6 +66,7 @@
     <div class="site-footer">
       &copy; 2021 Jam Box Studios
     </div>
+  </main>
   </div>
 </body>
 
